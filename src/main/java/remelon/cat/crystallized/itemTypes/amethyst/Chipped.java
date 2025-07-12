@@ -1,0 +1,36 @@
+package remelon.cat.crystallized.itemTypes.amethyst;
+
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.level.Level;
+import net.minecraft.network.chat.Component;
+import net.minecraft.ChatFormatting;
+import net.minecraft.util.Mth;
+
+import javax.annotation.Nullable;
+import java.util.List;
+
+public class Chipped extends Item {
+
+    public Chipped(Properties properties) {
+        super(properties.durability(99));
+    }
+
+    @Override
+    public boolean isBarVisible(ItemStack stack) {
+        return true;
+    }
+
+    @Override
+    public int getBarWidth(ItemStack stack) {
+        return Math.round(13.0F * Mth.clamp(1.75F / 3.0F, 0, 1));
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag flag) {
+        super.appendHoverText(stack, level, tooltip, flag);
+        tooltip.add(Component.translatable("item.crystallized.amethyst.tooltip").withStyle(ChatFormatting.GRAY));
+        tooltip.add(Component.translatable("item.crystallized.chipped.tooltip").withStyle(ChatFormatting.DARK_GRAY));
+    }
+}

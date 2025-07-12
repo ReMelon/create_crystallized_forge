@@ -1,0 +1,17 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "crystallized:glass_slide"
+    },
+    {
+      "item": "create:sturdy_sheet"
+    }
+  ],
+  "results": [
+    {
+      "item": "crystallized:strong_slide"
+    }
+  ],
+  "keepHeldItem": false
+}
