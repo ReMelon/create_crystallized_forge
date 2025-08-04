@@ -3,7 +3,7 @@
 
   "item.crystallized.liquid_crystal_bucket": "Bucket of Liquid Crystal",
   "block.crystallized.liquid_crystal" : "Liquid Crystal",
-  "fluid.crystallized.crystal" : "Liquid Crystal",
+  "fluid.crystallized.liquid_crystal" : "Liquid Crystal",
 
   "item.crystallized.nether_crystal": "Nether Crystal",
   "item.crystallized.conductive_compound": "Conductive Compound",
